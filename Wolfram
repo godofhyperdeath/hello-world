@@ -1,0 +1,376 @@
+<head>
+        	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="search" type="application/opensearchdescription+xml" href="http://www.wolframalpha.com/searchDescription.xml" title="Wolfram|Alpha">
+	<script async="" src="//wal.wolfram.com/js/1.1.0/raw.js"></script><script>
+        document.documentElement.className.replace(/\bno-js\b/,'') + ' js';
+	</script>
+	<link rel="stylesheet" href="/css/boilerplate.css">
+	<link rel="stylesheet" href="/css/ios_generics.css">
+	<link rel="stylesheet" href="/css/fonts.css">
+	<link rel="stylesheet" href="/css/mwa.css">
+	<link rel="stylesheet" href="/css/header.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wolfram|Alpha</title>
+        <meta name="description" content="">
+
+    <script src="//www.wolframcdn.com/consent/cookie-consent.php"></script></head>
+    <body class="home show-pro-submenu">
+            <header id="wa-common-header" class="authenticating">
+  <nav>
+    <h1>
+      <a href="/">
+        <img class="tracking-header-logo mobile_logo" src="/images/alpha_logo_mobile.svg" alt="Wolfram|Alpha">
+      </a>
+    </h1>
+    <form id="header-input-form" class="input" action="/input/" method="get">
+      <label for="wa-top-input">What would you like to know about?</label>
+      <input type="text" id="wa-top-input" name="i" placeholder="What would you like to know about?">
+      <button>Compute</button>
+    </form>
+    <div class="menu-toggle"><span class="icon-hamburger-menu"></span></div>
+    <ul class="main-nav">
+      <li>
+        <a class="header-pro-link">Pro</a>
+        <ul class="pro-menu">
+          <li><a class="tracking-pro-link" data-wa-track-click="" data-wa-track-event-name="header.proOverviewClicked" href="/pro/">Overview</a></li>
+          <li><a class="tracking-pro-link" data-wa-track-click="" data-wa-track-event-name="header.proStudentsClicked" href="/pro-for-students/">Pro for Students</a></li>
+          <li><a class="tracking-pro-link" data-wa-track-click="" data-wa-track-event-name="header.proEducatorsClicked" href="/pro-for-educators/">Pro for Educators</a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="tracking-header-example-link" data-wa-track-click="" data-wa-track-event-name="header.examplesClicked" href="/examples">Examples</a>
+      </li>
+      <li><a id="header-tour-link" href="//www.wolframalpha.com/tour1.html" data-wa-track-click="" data-wa-track-event-name="header.tourClicked" class="tracking-header-link">Tour</a></li>
+      <li class="oauth not-signed-in">
+        <a href="#" data-wa-track-click="" data-wa-track-event-name="header.signInClicked" class="sign-in">Sign in</a>
+        <button class="signed-in icon-user-email"></button>
+        <ul class="user-menu">
+            <li><a class="tracking-user-menu-link" id="header-acc-link" href="https://account.wolfram.com/products/wolfram-alpha">Account</a></li>
+            <li><a href="#" class="sign-out">Sign out</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <noscript>
+    &lt;a id="nojs-banner" href="http://enable-javascript.com/"&gt;
+      &lt;div&gt;Enable JavaScript to interact with content and submit forms on Wolfram|Alpha websites. &lt;span&gt;Learn&amp;nbsp;how&amp;nbsp;&amp;raquo;&lt;/span&gt;&lt;/div&gt;
+    &lt;/a&gt;
+  </noscript>
+</header>
+<div id="wa-top-overlay"></div>
+
+            <noscript>
+                &lt;section id="noscript"&gt;
+                    &lt;div id="noscript-wrap"&gt;
+                        &lt;div id="img-wrap"&gt;
+                            &lt;img src="http://www.wolframcdn.com/mobile/no-script-img.png"/&gt;
+                        &lt;/div&gt;
+                        &lt;div id="noscript-top"&gt;Uh oh! Wolfram|Alpha doesn't run without JavaScript.&lt;/div&gt;
+                        &lt;div id="noscript-bottom"&gt;Please enable JavaScript. If you don't know how, you can find instructions &lt;a href="http://enable-javascript.com/"&gt;here&lt;/a&gt;. Once you've done that, refresh this page to start using Wolfram|Alpha&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            </noscript>
+            <!-- Input -->
+            <div class="input_wrapper">
+    <a href="/" class="alpha_logo home_logo">
+        <img class="mobile_logo" src="/images/alpha_logo_mobile.svg">
+    </a>
+    <p class="know_promo">Enter what you want to calculate or know&nbsp;about:</p>
+    <form method="get" data-wa-track-submit="" data-wa-track-event-name="input.query" action="/input/" accept-charset="UTF-8" class="input_prime" autocomplete="off">
+        <input id="i" name="i" type="text" autocapitalize="off" onkeyup="showClear()" onclick="showClear()">
+        <a id="iClear" class="input_cancel" style="display: none;"></a>
+        <input id="query" type="submit" value="" border="0" style="background('/images/input_equal.svg')" class="input_equal">
+    </form>
+</div>
+
+
+
+            <section class="examples_view">
+                <h3>Explore some of the things Wolfram|Alpha&nbsp;can&nbsp;do:</h3>
+
+                    <div class="examples_container">
+                    <a href="/examples/Math.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/Mathematics-icon.svg">
+                        </div>
+                        <div class="examples_label">Mathematics</div>
+                    </a>
+                    <a href="/examples/StepByStepSolutions.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/StepbystepSolutions-icon.svg">
+                        </div>
+                        <div class="examples_label">Step-by-step Solutions</div>
+                    </a>
+                    <a href="/examples/WordsAndLinguistics.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/WordsLinguistics-icon.svg">
+                        </div>
+                        <div class="examples_label">Words &amp; Linguistics</div>
+                    </a>
+
+                    <a href="/examples/UnitsMeasures.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/UnitsMeasures-icon.svg">
+                        </div>
+                        <div class="examples_label">Units &amp; Measures</div>
+                    </a>
+                    <a href="/examples/Statistics.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/StatisticalDataAnalysis-icon.svg">
+                        </div>
+                        <div class="examples_label">Statistical &amp; Data Analysis</div>
+                    </a>
+                    <a href="/examples/PeopleAndHistory.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/PeopleHistory-icon.svg">
+                        </div>
+                        <div class="examples_label">People &amp; History</div>
+                    </a>
+
+
+                    <a href="/examples/DatesAndTimes.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/DatesTimes-icon.svg">
+                        </div>
+                        <div class="examples_label">Dates &amp; Times</div>
+                    </a>
+                    <a href="/examples/Chemistry.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/Chemistry-icon.svg">
+                        </div>
+                        <div class="examples_label">Chemistry</div>
+                    </a>
+                    <a href="examples/CultureMedia.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/CultureMedia-icon.svg">
+                        </div>
+                        <div class="examples_label">Culture &amp; Media</div>
+                    </a>
+
+
+                    <a href="/examples/MoneyAndFinance.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/MoneyFinance-icon.svg">
+                        </div>
+                        <div class="examples_label">Money &amp; Finance</div>
+                    </a>
+                    <a href="/examples/Physics.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/Physics-icon.svg">
+                        </div>
+                        <div class="examples_label">Physics</div>
+                    </a>
+                    <a href="/examples/ArtAndDesign.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/ArtDesign-icon.svg">
+                        </div>
+                        <div class="examples_label">Art &amp; Design</div>
+                    </a>
+
+
+                    <a href="/examples/SocioeconomicData.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/SocioeconomicData-icon.svg">
+                        </div>
+                        <div class="examples_label">Socioeconomic Data</div>
+                    </a>
+                    <a href="/examples/Astronomy.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/Astronomy-icon.svg">
+                        </div>
+                        <div class="examples_label">Astronomy</div>
+                    </a>
+                    <a href="/examples/Music.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/Music-icon.svg">
+                        </div>
+                        <div class="examples_label">Music</div>
+                    </a>
+
+                    <a href="/examples/HealthAndMedicine.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/HealthMedicine-icon.svg">
+                        </div>
+                        <div class="examples_label">Health &amp; Medicine</div>
+                    </a>
+                    <a href="/examples/Engineering.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/Engineering-icon.svg">
+                        </div>
+                        <div class="examples_label">Engineering</div>
+                    </a>
+                    <a href="/examples/PlacesAndGeography.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/PlacesGeography-icon.svg">
+                        </div>
+                        <div class="examples_label">Places &amp; Geography</div>
+                    </a>
+
+
+                    <a href="/examples/FoodAndNutrition.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/FoodNutrition-icon.svg">
+                        </div>
+                        <div class="examples_label">Food &amp; Nutrition</div>
+                    </a>
+                    <a href="/examples/Education.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/Education-icon.svg">
+                        </div>
+                        <div class="examples_label">Education</div>
+                    </a>
+                    <a href="/examples/Materials.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/Materials-icon.svg">
+                        </div>
+                        <div class="examples_label">Materials</div>
+                    </a>
+
+
+                    <a href="/examples/EarthSciences.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/EarthSciences-icon.svg">
+                        </div>
+                        <div class="examples_label">Earth Sciences</div>
+                    </a>
+                    <a href="/examples/LifeSciences.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/LifeSciences-icon.svg">
+                        </div>
+                        <div class="examples_label">Life Sciences</div>
+                    </a>
+                    <a href="/examples/WeatherAndMeteorology.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/WeatherMeteorology-icon.svg">
+                        </div>
+                        <div class="examples_label">Weather &amp; Meteorology</div>
+                    </a>
+
+
+                    <a href="/examples/TechnologicalWorld.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/TechnologicalWorld-icon.svg">
+                        </div>
+                        <div class="examples_label">Technological World</div>
+                    </a>
+                    <a href="/examples/SportsGames.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/SportsGames-icon.svg">
+                        </div>
+                        <div class="examples_label">Sports &amp; Games</div>
+                    </a>
+                    <a href="/examples/ComputationalScience.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/ComputationalSciences-icon.svg">
+                        </div>
+                        <div class="examples_label">Computational Sciences</div>
+                    </a>
+
+
+                    <a href="/examples/Transportation.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/Transportation-icon.svg">
+                        </div>
+                        <div class="examples_label">Transportation</div>
+                    </a>
+                    <a href="/examples/WebAndComputerSystems.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/WebComputerSystems-icon.svg">
+                        </div>
+                        <div class="examples_label">Web &amp; Computer Systems</div>
+                    </a>
+                    <a href="/examples/Surprises.html" data-wa-track-ex-click="" data-wa-track-event-name="examples.tileClicked" class="examples_item">
+                        <div class="examples_icon">
+                            <img src="//www.wolframcdn.com/homepage/example-pods/Surprises-icon.svg">
+                        </div>
+                        <div class="examples_label">Surprises</div>
+                    </a>
+                </div>
+            </section>
+            <footer class="page" style="display: block;">
+  <div id="chooseView">
+      <p>Viewing environment:&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold checkmark">Mobile</span>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/alpha/preferMobile" data-wa-track-click="" data-wa-track-event-name="footer.preferClicked" id="prefer-view-standard">&nbsp;Standard</a></p>
+  </div>
+  <ul>
+      <li class="outer-li" id="footer-top-links">
+          <ul>
+              <li><a target="_self" title="Wolfram|Alpha Pro" href="https://www.wolframalpha.com/pro/?src=footer" data-wa-track-click="" data-wa-track-event-name="footer.proClicked">Pro</a></li>
+              <li><a target="_self" href="https://products.wolframalpha.com/mobile/" title="Wolfram|Alpha Mobile Apps" data-wa-track-click="" data-wa-track-event-name="footer.appsClicked">Apps</a></li>
+              <li><a target="_self" href="https://products.wolframalpha.com/api/" title="Wolfram|Alpha API &amp; Developer Solutions" data-wa-track-click="" data-wa-track-event-name="footer.apiClicked">API</a></li>
+              <li><a target="_self" href="https://products.wolframalpha.com/business/" title="Wolfram|Alpha Business Solutions" data-wa-track-click="" data-wa-track-event-name="footer.businessClicked">Business</a></li>
+              <li><a href="/input/feedback.jsp" data-wa-track-click="" data-wa-track-event-name="footer.feedbackClicked">Feedback</a></li>
+              <li class="no-divider"><a target="_self" href="/social/" title="Connect" data-wa-track-click="" data-wa-track-event-name="footer.connectClicked">Connect</a></li>
+          </ul>
+      </li>
+      <li class="outer-li" id="footer-copy">
+          <ul>
+              <li><span class="ng-binding">© 2018 Wolfram Alpha LLC</span></li>
+              <li><a target="_self" title="About Wolfram|Alpha" href="/about.html" data-wa-track-click="" data-wa-track-event-name="footer.aboutClicked">About</a></li>
+              <li><a target="_self" title="Contact Wolfram|Alpha" href="/contact.html" data-wa-track-click="" data-wa-track-event-name="footer.contactClicked">Contact</a></li>
+              <li><a target="_blank" href="/termsofuse.html" title="Wolfram|Alpha Terms of Use" data-wa-track-click="" data-wa-track-event-name="footer.termsClicked">Terms</a></li>
+              <li class="no-divider"><a target="_blank" href="/privacypolicy.html" title="Wolfram|Alpha Privacy Policy" data-wa-track-click="" data-wa-track-event-name="footer.privacyClicked">Privacy</a></li>
+          </ul>
+      </li>
+  </ul>
+  <a href="https://www.wolfram.com/language" id="wolfram-language-link" data-wa-track-click="" data-wa-track-event-name="footer.poweredByClicked" class="powered_by">Powered by the <span>Wolfram Language</span></a>
+</footer>
+<script src="//www.wolframcdn.com/javascript/jquery-2.1.4.min.js"></script>
+<script src="/javascript/jQuery.succinct.min.js"></script>
+<script src="/javascript/mobile-auth.js"></script>
+<script src="/javascript/main.js"></script>
+<script>
+    var script = document.createElement('script');
+    // 
+    com.wolframalpha.module([
+        'com.wolframalpha.service.WAUserService'
+    ], function(
+        WAUserService
+    ) {
+      WAUserService.getUser().then(function handleLoggedInOut(user) {
+        if(user === null) {
+          script.src = "//www.wolframcdn.com/consent/cookie-consent.php";
+          document.head.appendChild(script);
+        }
+        else {
+          script.src = "//www.wolframcdn.com/consent/cookie-consent.php?signedin=true";
+          document.head.appendChild(script);
+        }
+      });
+    });
+    // 
+</script>
+<style>
+/* styles for cookie consent script */
+div#__cookie-consent {
+    background: rgba(101, 101, 101, 1);
+    bottom: -52px;
+    height: 52px;
+}
+
+div#__cookie-consent-left,
+div#__cookie-consent-right {
+    height: 52px;
+}
+</style>
+<script>
+
+        var stage = '';
+
+        document.getElementById('header-acc-link').href = 'https://account.' +
+                stage + 'wolfram.com/products/wolfram-alpha';
+        document.getElementById('header-tour-link').href = '//www.'+ stage +
+                'wolframalpha.com/tour1.html';
+        var wolframLanguageLink = document.getElementById('wolfram-language-link');
+        if(wolframLanguageLink){
+            wolframLanguageLink.href = 'https://www.' +
+                stage + 'wolfram.com/language';
+        }
+</script>
+<script src="/javascript/tracking.js"></script>
+
+
+    
+
+</body>
